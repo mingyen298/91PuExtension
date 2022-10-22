@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "91PuExtension",
+  "version": "1.0.0",
+  "description": "",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.91pu.com.tw/*"
+      ],
+      "js": [
+        "execute.js",
+        "jquery.min.js"
+      ]
+    }
+  ]
+}
